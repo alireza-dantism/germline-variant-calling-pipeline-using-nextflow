@@ -70,6 +70,8 @@ workflow {
 
 ```
 
+> nextflow run variant_calling_gatk.nf
+
 ### BCFtools Result
 
 ### Sample 1 - Output
@@ -201,6 +203,8 @@ workflow {
 
 
 ```
+
+> nextflow run variant_calling_bcftools.nf
 
 
 ### Sample 1 - Output
