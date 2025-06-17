@@ -74,7 +74,6 @@ workflow {
 nextflow run variant_calling_gatk.nf
 ```
 
-
 ### BCFtools Result
 ___
 
@@ -211,6 +210,9 @@ workflow {
 ```
 nextflow run variant_calling_bcftools.nf
 ```
+
+![Running code](/command-gatk.jpg)
+
 
 ### GATK Result
 ___
