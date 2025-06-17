@@ -206,7 +206,7 @@ workflow {
 
 ```
 
-# Running Code
+## Running Code
 
 ```
 nextflow run variant_calling_bcftools.nf
