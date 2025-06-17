@@ -2,7 +2,7 @@
 
 Understanding germline variants is crucial for unraveling the complexities of human genetics and their implications for health and disease. Germline variants are heritable genetic changes that can influence an individual’s susceptibility to various conditions, including cancer, cardiovascular diseases, and other hereditary disorders. By accurately identifying these variants, researchers and clinicians can make informed decisions about diagnosis, treatment, and prevention strategies.
 
-This repository presents a streamlined bioinformatics workflow designed specifically for germline variant calling. Leveraging aligned genomic data for each sample, our pipeline utilizes Nextflow alongside the Genome Analysis Toolkit (GATK) and BCFtools to ensure comprehensive variant identification.
+This repository presents a streamlined bioinformatics workflow designed specifically for germline variant calling. Leveraging aligned genomic data for each sample, our pipeline utilizes Nextflow alongside **the Genome Analysis Toolkit (GATK)** and **BCFtools** to ensure comprehensive variant identification.
 
 ## Key Features
 
