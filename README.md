@@ -214,7 +214,7 @@ workflow {
 ## Running Code
 
 ```
-nextflow run variant_calling_bcftools.nf
+nextflow run variant_calling_gatk.nf
 ```
 
 ![Running code](/command-gatk.png)
