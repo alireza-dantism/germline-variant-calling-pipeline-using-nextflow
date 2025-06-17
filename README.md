@@ -14,7 +14,8 @@ This repository presents a streamlined bioinformatics workflow designed specific
 
 ### BCFtools Code 
 
-``
+```
+
 #!/usr/bin/env nextflow
 
 nextflow.enable.dsl=2
@@ -66,4 +67,5 @@ workflow {
 
     variant_calling(samples, roi_file, ref)
 }
-``
+
+```
