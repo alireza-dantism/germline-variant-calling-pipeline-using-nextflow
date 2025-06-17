@@ -12,7 +12,7 @@ This repository presents a streamlined bioinformatics workflow designed specific
 
 **BCFtools for Variant Manipulation:** BCFtools is a set of utilities that facilitate the manipulation of variant call format (VCF) and binary call format (BCF) files. It allows users to filter, annotate, and manipulate variant data efficiently, making it an essential tool for post-variant calling analysis.
 
-### BCFtools Code 
+## BCFtools Code 
 
 ```
 
@@ -74,8 +74,7 @@ workflow {
 nextflow run variant_calling_gatk.nf
 ```
 
-### BCFtools Result
-___
+## BCFtools Result
 
 ### Sample 1 - Output
 
@@ -151,7 +150,7 @@ ___
 
 ***
 
-### GATK Code 
+## GATK Code 
 
 ```
 
@@ -216,7 +215,7 @@ nextflow run variant_calling_bcftools.nf
 ![Running code](/command-gatk.png)
 
 
-### GATK Result
+## GATK Result
 ___
 
 ### Sample 1 - Output
