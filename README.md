@@ -69,3 +69,7 @@ workflow {
 }
 
 ```
+
+### BCFtools Result
+
+
