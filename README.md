@@ -216,7 +216,6 @@ nextflow run variant_calling_bcftools.nf
 
 
 ## GATK Result
-___
 
 ### Sample 1 - Output
 
