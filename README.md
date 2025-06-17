@@ -72,7 +72,7 @@ workflow {
 
 ### BCFtools Result
 
-#### Sample 1 - Output
+### Sample 1 - Output
 
 |   1   |   67395837   |   .  |   C     |   A     |   225.417  |   .  |
 |-------|--------------|------|---------|---------|------------|------|
@@ -103,7 +103,7 @@ workflow {
 |   X   |   112454808  |   .  |   T     |   C     |   222.284  |   .  |
 |   X   |   112454829  |   .  |   CGG   |   CGGG  |   22.3479  |   .  |
 
-#### Sample 2 - Output
+### Sample 2 - Output
 
 |   1   |   67395837   |   .  |   C     |   A   |   222.262  |   .  |
 |-------|--------------|------|---------|-------|------------|------|
@@ -144,7 +144,7 @@ workflow {
 |   X   |   112454808  |   .  |   T     |   C   |   59.8929  |   .  |
 |   X   |   136349199  |   .  |   C     |   T   |   203.352  |   .  |
 
-
+***
 
 ### GATK Code 
 
@@ -203,7 +203,7 @@ workflow {
 ```
 
 
-#### Sample 1 - Output
+### Sample 1 - Output
 
 |   1   |   67395837   |   .  |   C     |   A     |   530.06  |   .  |
 |-------|--------------|------|---------|---------|-----------|------|
@@ -230,7 +230,7 @@ workflow {
 |   X   |   112454808  |   .  |   T     |   C     |   98.73   |   .  |
 
 
-#### Sample 2 - Output
+### Sample 2 - Output
 
 |   1   |   67395837   |   .  |   C           |   A     |   117.64  |   .  |
 |-------|--------------|------|---------------|---------|-----------|------|
@@ -263,3 +263,17 @@ workflow {
 |   X   |   136349199  |   .  |   C           |   T     |   185.64  |   .  |
 
 
+## Why bcftools and GATK showing different results
+
+The discrepancy between bcftools and GATK showing different results regarding variant calls can arise from several factors. Here are some common reasons and considerations to help you troubleshoot the situation:
+
+**1. Different Calling Algorithms**
+bcftools and GATK use different algorithms and methodologies for variant calling. GATK is often considered more sophisticated due to its focus on germline variant discovery and can include advanced features like joint calling across samples.
+bcftools is generally simpler and faster for quick calls but might miss variants that GATK identifies, especially in low-coverage regions or in the presence of complex variants.
+
+**2. Default Parameters and Settings**
+The default parameters used in bcftools and GATK may differ. For example, the minimum quality score or the filtering criteria applied by default can affect what is considered a variant.
+Check the specific parameters you’re using in both tools. For example, ensure you’re not applying stricter filters in bcftools that might exclude variants.
+
+**3. Coverage and Read Depth**
+If your BAM file has low coverage or poor quality reads, bcftools may not call variants that GATK finds, especially if GATK uses advanced techniques like local realignment or base quality score recalibration.
