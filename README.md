@@ -211,7 +211,7 @@ workflow {
 nextflow run variant_calling_bcftools.nf
 ```
 
-![Running code](/command-gatk.jpg)
+![Running code](/command-gatk.png)
 
 
 ### GATK Result
