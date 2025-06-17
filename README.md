@@ -70,9 +70,14 @@ workflow {
 
 ```
 
+## Running Code
+
 ```
-nextflow run variant_calling_gatk.nf
+nextflow run variant_calling_bcftools.nf
 ```
+
+![Running code](/command-bcftools.png)
+
 
 ## BCFtools Result
 
